@@ -31,21 +31,9 @@ jobs:
         run: |
           chmod +x gradlew && chmod +x *
           ./gradlew build
-          echo ========================================
-          ls ${{ github.workspace }}/app/build/outputs/
-          echo ========================================
-          ls ${{ github.workspace }}/app/build/outputs/apk/release/
-          echo ========================================
 
-      # - name: arm64
-        # uses: actions/upload-artifact@v4
-        # with:
-          # name: Arm64
-          # path: ${{ github.workspace }}/app/build/outputs/apk/release/*arm64-v8a.apk
-
-      # - name: armeabi-v7a
-        # uses: actions/upload-artifact@v4
-        # with:
-          # name: Armeabi-v7a
-          # path: ${{ github.workspace }}/app/build/outputs/apk/release/*armeabi-v7a.apk
-          
+      - name: Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Unsigned
+          path: ${{ github.workspace }}/app/build/outputs/apk/release/app-release-unsigned.apk
