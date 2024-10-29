@@ -30,5 +30,4 @@ jobs:
       - name: Build
         run: |
           chmod +x gradlew && chmod +x *
-          gradle wrapper --gradle-version latest --distribution-type bin
           ./gradlew build
