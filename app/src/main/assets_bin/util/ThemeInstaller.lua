@@ -11,8 +11,8 @@ local material_style_center = R.style.ThemeOverlay_Material3_MaterialAlertDialog
 local dividerColor = ContextCompat.getColor(this,R.color.divider_default)
 local textColorSecondary = theme.color.textColorSecondary
 
-local rootThemeDir = "/storage/emulated/0/.dwd/c/o/m/b/b/k/t/h/e/m/e/T/"
-local rootFontsDir = "/storage/emulated/0/.dwd/c/o/m/b/b/k/t/h/e/m/e/F/"
+local rootThemeDir = "/data/bbkcore/theme/.dwd/c/o/m/b/b/k/t/h/e/m/e/T/"
+local rootFontsDir = "/data/bbkcore/theme/.dwd/c/o/m/b/b/k/t/h/e/m/e/F/"
 
 theme_data_table = {
   key = 0,
