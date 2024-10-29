@@ -3,6 +3,13 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="id.lxs.vtheme">
 
+    <supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
@@ -35,6 +42,7 @@
 
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustResize|stateHidden"
@@ -42,6 +50,7 @@
 
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize|stateHidden"
             android:label="@string/app_name"
             android:name="com.androlua.LuaActivity">
@@ -76,6 +85,7 @@
 
         <activity
             android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
             android:documentLaunchMode="intoExisting"
             android:windowSoftInputMode="adjustResize|stateHidden"
             android:excludeFromRecents="false"
@@ -112,6 +122,7 @@
 
         <activity
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|navigation|screenLayout|fontScale|smallestScreenSize|keyboardHidden|orientation|screenSize"
+            android:exported="false"
             android:label="@string/app_name"
             android:windowSoftInputMode="adjustResize|stateHidden"
             android:name="com.androlua.Welcome">
